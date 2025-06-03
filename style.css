@@ -1,0 +1,111 @@
+/* Fuente elegante */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  color: #4a3430;
+}
+
+/* Fondo vintage estilo papel antiguo */
+.fondo-vintage {
+  background: #f3e9dc;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  min-height: 100vh;
+}
+
+/* Logo tamaño */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(1px 1px 1px #a38a7c);
+}
+
+/* Secciones */
+h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #6b4c3b;
+}
+
+p.lead {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #5a4032;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(106, 84, 63, 0.3);
+}
+.imagen-alimentos {
+  height: 200px; /* o el tamaño que prefieras */
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/* Redes sociales con efecto flotante y sobresalto */
+.social-icon img {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 2px #a1755a);
+  cursor: pointer;
+}
+
+.social-icon:hover img {
+  transform: translateY(-8px) scale(1.2);
+  filter: drop-shadow(0 0 6px #d9b382);
+}
+
+/* Dropdowns formularios */
+.dropdown-menu {
+  background: #f9f4ee;
+  border: 1px solid #d3bfa1;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(105, 78, 53, 0.25);
+}
+
+/* Botones */
+.btn-outline-dark {
+  border-color: #6b4c3b;
+  color: #6b4c3b;
+  font-weight: 600;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4c3b;
+  color: #f3e9dc;
+  border-color: #6b4c3b;
+}
+
+/* Responsive fixes */
+@media (max-width: 575px) {
+  .navbar-nav .dropdown-menu {
+    min-width: 100% !important;
+  }
+}
+
+
+
