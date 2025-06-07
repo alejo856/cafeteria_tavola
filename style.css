@@ -48,13 +48,13 @@ p.lead {
 }
 
 /* Cards */
-.card {
+.card.index {
   border: none;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card.index:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(106, 84, 63, 0.3);
 }
@@ -100,12 +100,85 @@ p.lead {
   border-color: #6b4c3b;
 }
 
+/*Hojas menú*/
+
+.btn-agregar {
+background-color: #6b4c3b; 
+color: white; /*texto del boton*/
+font-weight: bold;
+display: flex; /*texto y el ícono en una misma línea*/
+align-items: center;
+justify-content: center;
+text-decoration: none;
+gap: 8px; /*espacio entre el texto y el ícono*/
+padding: 10px 16px; /*boton redondeado*/
+border-radius: 4px;
+transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.btn-agregar:hover {
+background-color: #c4a798; /*color al pasar el mouse*/
+transform: scale(1.05); 
+}
+
+.btn-agregar svg { /*tamaño boton*/
+width: 20px;
+height: 20px;
+fill: white;
+}
+
+.centrar-contenedor-menu {
+    display: flex;
+    flex-wrap: wrap;  /* Esto asegura que las tarjetas se acomoden en varias filas si es necesario */
+    justify-content: center;
+    gap: 20px; /* Espacio  */
+}
+
+
+.card.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f4ef;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 20px; /*Separa las tarjetas verticalmente*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.menu:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card.menu img {
+width: 100%; /*ajusta al contenedor*/
+height: auto;
+aspect-ratio: 1 / 1; /*pone cuadradas las imagenes*/
+object-fit: contain;
+border-radius: 8px; /*esquinas redondeadas*/
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-img-top {
+max-width: 100%; /* Img ocupa todo el ancho */
+height: 200px; /* Fija la altura para mantener consistencia */
+object-fit: cover; /* Hace que la imagen no se distorsione */
+}
+
+/**/
+
 /* Responsive fixes */
 @media (max-width: 575px) {
   .navbar-nav .dropdown-menu {
     min-width: 100% !important;
   }
 }
-
-
-
