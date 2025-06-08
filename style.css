@@ -106,7 +106,7 @@ p.lead {
 background-color: #6b4c3b; 
 color: white; /*texto del boton*/
 font-weight: bold;
-display: flex; /*texto y el ícono en una misma línea*/
+display: inline-flex; /*texto y el ícono en una misma línea*/
 align-items: center;
 justify-content: center;
 text-decoration: none;
@@ -127,13 +127,6 @@ height: 20px;
 fill: white;
 }
 
-.centrar-contenedor-menu {
-    display: flex;
-    flex-wrap: wrap;  /* Esto asegura que las tarjetas se acomoden en varias filas si es necesario */
-    justify-content: center;
-    gap: 20px; /* Espacio  */
-}
-
 
 .card.menu {
     display: flex;
@@ -143,7 +136,7 @@ fill: white;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 16px;
-    max-width: 280px;
+    max-width: 380px;
     width: 100%;
     margin-bottom: 20px; /*Separa las tarjetas verticalmente*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;

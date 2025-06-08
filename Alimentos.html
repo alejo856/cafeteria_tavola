@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bebidas</title>
+    <title>Alimentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -11,7 +11,8 @@
 <body class="fondo-vintage">
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm">
     <a class="navbar-brand" href="#">
         <img src="img-index/img tavola.png" alt="Tavola Café " />
     </a> 
@@ -21,9 +22,10 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="Bebidas.html">Bebidas</a></li>
         <li class="nav-item"><a class="nav-link" href="Alimentos.html">Alimentos</a></li>
+        
         </ul>
         <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown">
@@ -42,37 +44,38 @@
                 </div>
                 <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
             </form>
-        </ul>
+            </ul>
         </li>
         <li class="nav-item dropdown ms-3">
-        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Administrador
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
             <form>
-            <div class="mb-3">
+                <div class="mb-3">
                 <label for="adminUsuarioInput" class="form-label">Usuario</label>
                 <input type="text" class="form-control" id="adminUsuarioInput" placeholder="Ingresa usuario" required />
-            </div>
-            <div class="mb-3">
+                </div>
+                <div class="mb-3">
                 <label for="adminPasswordInput" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="adminPasswordInput" placeholder="Contraseña" required />
-            </div>
-            <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
+                </div>
+                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
             </form>
-        </ul>
+            </ul>
         </li>
-    </ul>
+        </ul>
     </div>
-</nav>
+    </nav>
 </header>
+
 <main> 
 <h3 class="text-center mb-5">Alimentos</h3>
 
     <div class="centrar-contenedor-menu">
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Croasant.png" class="card-img-top" alt="Croissant" />
                     <div class="card-body text-center">
@@ -91,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Pastel-zanahoria.png" class="card-img-top" alt="Pastel de Zanahoria" />
                     <div class="card-body text-center">
@@ -110,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Galletas.png" class="card-img-top" alt="Galletas caseras" />
                     <div class="card-body text-center">
@@ -129,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Pastel-hojaldrado-jamon-queso.png" class="card-img-top" alt="Pastel hojaldrado jamon y queso" />
                     <div class="card-body text-center">
@@ -148,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Pastel-hojaldrado-queso.png" class="card-img-top" alt="Pastel hojaldrado queso" />
                     <div class="card-body text-center">
@@ -167,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Buñuelo.png" class="card-img-top" alt="Buñuelo" />
                     <div class="card-body text-center">
@@ -186,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/papas-natural.png" class="card-img-top" alt="Papas caseras naturales" />
                     <div class="card-body text-center">
@@ -205,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/papas-pimienta.png" class="card-img-top" alt="Papas caseras pimienta" />
                     <div class="card-body text-center">
@@ -224,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Sandwich.png" class="card-img-top" alt="Sandwich" />
                     <div class="card-body text-center">
@@ -243,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Perro-caliente.jpg" class="card-img-top" alt="Perro Caliente" />
                     <div class="card-body text-center">
@@ -262,7 +265,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Perro-caliente-papas.png" class="card-img-top" alt="Perro Caliente con papas" />
                     <div class="card-body text-center">
@@ -281,7 +284,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Chuzo-pollo.png" class="card-img-top" alt="Chuzo de pollo" />
                     <div class="card-body text-center">
@@ -300,7 +303,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Hamburguesa.png" class="card-img-top" alt="Hamburguesa" />
                     <div class="card-body text-center">
@@ -319,7 +322,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Hamburguesa-papas.png" class="card-img-top" alt="Hamburguesa con papas" />
                     <div class="card-body text-center">
@@ -339,7 +342,7 @@
             </div>
 
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/Salchipapas.png" class="card-img-top" alt="Hamburguesa con papas" />
                     <div class="card-body text-center">
@@ -358,7 +361,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
                     <img src="Alimentos/porcion-papas.png" class="card-img-top" alt="Porcion de papas" />
                     <div class="card-body text-center">
@@ -393,7 +396,6 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
