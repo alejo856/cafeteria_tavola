@@ -142,7 +142,6 @@ fill: white;
     padding: 16px;
     max-width: 400px;
     width: 100%;
-    margin-bottom: 10px; /*Separa las tarjetas verticalmente*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
