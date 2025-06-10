@@ -6,6 +6,10 @@ body {
   color: #4a3430;
 }
 
+main {
+  padding-top: 100px;
+}
+
 /* Fondo vintage estilo papel antiguo */
 .fondo-vintage {
   background: #f3e9dc;
@@ -136,9 +140,9 @@ fill: white;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 16px;
-    max-width: 380px;
+    max-width: 400px;
     width: 100%;
-    margin-bottom: 20px; /*Separa las tarjetas verticalmente*/
+    margin-bottom: 10px; /*Separa las tarjetas verticalmente*/
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

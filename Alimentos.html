@@ -13,62 +13,80 @@
 </head>
 
 <body class="fondo-vintage">
+
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm">
-    <a class="navbar-brand" href="#">
-        <img src="img-index/img tavola.png" alt="Tavola Café " />
-    </a> 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="Bebidas.html">Bebidas</a></li>
-        <li class="nav-item"><a class="nav-link" href="Alimentos.html">Alimentos</a></li>
-
-        </ul>
-        <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Usuario
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="userDropdown" style="min-width: 250px;">
-            <form  action="Usuarios.html" method="get">
-                <div class="mb-3">
-                <label for="usuarioInput" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="usuarioInput" placeholder="Ingresa usuario" required />
-                </div>
-                <div class="mb-3">
-                <label for="passwordInput" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña" required />
-                </div>
-                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
-            </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="img-index/Tavola.png" alt="Tavola Café" />
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="Bebidas.html">Bebidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Alimentos.html">Alimentos</a></li>
             </ul>
-        </li>
-        <li class="nav-item dropdown ms-3">
-            <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Administrador
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
+            <ul class="navbar-nav ms-auto">
+                <!-- Carrito -->
+                <li class="nav-item me-3">
+                    <a class="nav-link position-relative" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            1
+                            <span class="visually-hidden">productos en el carrito</span>
+                        </span>
+                    </a>
+                </li>
+                <!-- Usuario -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Usuario
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="userDropdown" style="min-width: 250px;">
+                        <li>
+                            <form action="Usuarios.html" method="get">
+                                <div class="mb-3">
+                                    <label for="usuarioInput" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuarioInput" placeholder="Ingresa usuario" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordInput" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña" required />
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
 
-                <form action="Admon.html" method="get">
-                <div class="mb-3">
-                <label for="adminUsuarioInput" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="adminUsuarioInput" placeholder="Ingresa usuario" required />
-                </div>
-                <div class="mb-3">
-                <label for="adminPasswordInput" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="adminPasswordInput" placeholder="Contraseña" required />
-                </div>
-                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
-            </form>
+                <!-- Administrador -->
+                <li class="nav-item dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Administrador
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
+                        <li>
+                            <form action="Admon.html" method="get">
+                                <div class="mb-3">
+                                    <label for="adminUsuarioInput" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="adminUsuarioInput" placeholder="Ingresa usuario" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="adminPasswordInput" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="adminPasswordInput" placeholder="Contraseña" required />
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        </ul>
-    </div>
+        </div>
     </nav>
 </header>
 
@@ -80,7 +98,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Croasant.png" class="card-img-top" alt="Croissant" />
+                    <img src="Alimentos/Croasant.png" class="card-img-top" alt="Croissant - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">CROISSANT</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$3.000 COP</h6>
@@ -99,7 +117,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Pastel-zanahoria.png" class="card-img-top" alt="Pastel de Zanahoria" />
+                    <img src="Alimentos/Pastel-zanahoria.png" class="card-img-top" alt="Pastel de Zanahoria - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PASTEL DE ZANAHORIA</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$4.000 COP</h6>
@@ -118,7 +136,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Galletas.png" class="card-img-top" alt="Galletas caseras" />
+                    <img src="Alimentos/Galletas.png" class="card-img-top" alt="Galletas caseras - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">GALLETAS CASERAS x 1 und</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$800 COP</h6>
@@ -137,7 +155,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Pastel-hojaldrado-jamon-queso.png" class="card-img-top" alt="Pastel hojaldrado jamon y queso" />
+                    <img src="Alimentos/Pastel-hojaldrado-jamon-queso.png" class="card-img-top" alt="Pastel hojaldrado jamon y queso - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PASTEL HOJALDRE JAMÓN Y QUESO</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$4.500 COP</h6>
@@ -156,7 +174,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Pastel-hojaldrado-queso.png" class="card-img-top" alt="Pastel hojaldrado queso" />
+                    <img src="Alimentos/Pastel-hojaldrado-queso.png" class="card-img-top" alt="Pastel hojaldrado queso - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PASTEL HOJALDRE QUESO</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$4.500 COP</h6>
@@ -175,7 +193,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Buñuelo.png" class="card-img-top" alt="Buñuelo" />
+                    <img src="Alimentos/Buñuelo.png" class="card-img-top" alt="Buñuelo - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">BUÑUELO x 1 und</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$2.500 COP</h6>
@@ -194,7 +212,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/papas-natural.png" class="card-img-top" alt="Papas caseras naturales" />
+                    <img src="Alimentos/papas-natural.png" class="card-img-top" alt="Papas caseras naturales - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PAPAS CASERAS NATURALES</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$3.800 COP</h6>
@@ -213,7 +231,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/papas-pimienta.png" class="card-img-top" alt="Papas caseras pimienta" />
+                    <img src="Alimentos/papas-pimienta.png" class="card-img-top" alt="Papas caseras pimienta - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PAPAS CASERAS PIMIENTA</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$3.800 COP</h6>
@@ -232,7 +250,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Sandwich.png" class="card-img-top" alt="Sandwich" />
+                    <img src="Alimentos/Sandwich.png" class="card-img-top" alt="Sandwich - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">SANDWICH</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$5.800 COP</h6>
@@ -251,7 +269,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Perro-caliente.jpg" class="card-img-top" alt="Perro Caliente" />
+                    <img src="Alimentos/Perro-caliente.jpg" class="card-img-top" alt="Perro Caliente - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PERRO CALIENTE</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$8.000 COP</h6>
@@ -270,7 +288,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Perro-caliente-papas.png" class="card-img-top" alt="Perro Caliente con papas" />
+                    <img src="Alimentos/Perro-caliente-papas.png" class="card-img-top" alt="Perro Caliente con papas - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PERRO CALIENTE CON PAPAS</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$11.000 COP</h6>
@@ -289,7 +307,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Chuzo-pollo.png" class="card-img-top" alt="Chuzo de pollo" />
+                    <img src="Alimentos/Chuzo-pollo.png" class="card-img-top" alt="Chuzo de pollo - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">CHUZO DE POLLO</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$13.000 COP</h6>
@@ -308,7 +326,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Hamburguesa.png" class="card-img-top" alt="Hamburguesa" />
+                    <img src="Alimentos/Hamburguesa.png" class="card-img-top" alt="Hamburguesa - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">HAMBURGUESA</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$12.000 COP</h6>
@@ -327,7 +345,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Hamburguesa-papas.png" class="card-img-top" alt="Hamburguesa con papas" />
+                    <img src="Alimentos/Hamburguesa-papas.png" class="card-img-top" alt="Hamburguesa con papas - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">HAMBURGUESA CON PAPAS</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$14.000 COP</h6>
@@ -347,7 +365,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/Salchipapas.png" class="card-img-top" alt="Hamburguesa con papas" />
+                    <img src="Alimentos/Salchipapas.png" class="card-img-top" alt="Hamburguesa con papas - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">SALCHIPAPAS</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$8.000 COP</h6>
@@ -366,7 +384,7 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card menu">
-                    <img src="Alimentos/porcion-papas.png" class="card-img-top" alt="Porcion de papas" />
+                    <img src="Alimentos/porcion-papas.png" class="card-img-top" alt="Porcion de papas - Tavola Café" />
                     <div class="card-body text-center">
                         <h5 class="card-title">PORCIÓN DE PAPAS</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">$5.000 COP</h6>
@@ -382,8 +400,10 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
 </main>
+
 <footer class="text-center py-4">
     <p>Síguenos en nuestras redes sociales</p>
     <div class="d-flex justify-content-center gap-4">

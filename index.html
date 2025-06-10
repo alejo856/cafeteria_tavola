@@ -15,67 +15,72 @@
 <body class="fondo-vintage">
 
   <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm">
-      <a class="navbar-brand" href="#">
-        <img src="img-index/img tavola.png" alt="Tavola Café " />
-      </a> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="Bebidas.html">Bebidas</a></li>
-          <li class="nav-item"><a class="nav-link" href="Alimentos.html">Alimentos</a></li>
-          
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Usuario
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="userDropdown" style="min-width: 250px;">
-              <form  action="Usuarios.html" method="get">
-                <div class="mb-3">
-                  <label for="usuarioInput" class="form-label">Usuario</label>
-                  <input type="text" class="form-control" id="usuarioInput" placeholder="Ingresa usuario" required />
-                </div>
-                <div class="mb-3">
-                  <label for="passwordInput" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña" required />
-                </div>
-                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
-              </form>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 shadow-sm fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="img-index/Tavola.png" alt="Tavola Café" />
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="Bebidas.html">Bebidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Alimentos.html">Alimentos</a></li>
             </ul>
-          </li>
-          <li class="nav-item dropdown ms-3">
-            <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Administrador
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
-              
-                <form action="Admon.html" method="get">
-                <div class="mb-3">
-                  <label for="adminUsuarioInput" class="form-label">Usuario</label>
-                  <input type="text" class="form-control" id="adminUsuarioInput" placeholder="Ingresa usuario" required />
-                </div>
-                <div class="mb-3">
-                  <label for="adminPasswordInput" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="adminPasswordInput" placeholder="Contraseña" required />
-                </div>
-                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
-              </form>
+            <ul class="navbar-nav ms-auto">
+                <!-- Usuario -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Usuario
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="userDropdown" style="min-width: 250px;">
+                        <li>
+                            <form action="Usuarios.html" method="get">
+                                <div class="mb-3">
+                                    <label for="usuarioInput" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="usuarioInput" placeholder="Ingresa usuario" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordInput" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña" required />
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Administrador -->
+                <li class="nav-item dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Administrador
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="adminDropdown" style="min-width: 250px;">
+                        <li>
+                            <form action="Admon.html" method="get">
+                                <div class="mb-3">
+                                    <label for="adminUsuarioInput" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="adminUsuarioInput" placeholder="Ingresa usuario" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="adminPasswordInput" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="adminPasswordInput" placeholder="Contraseña" required />
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark w-100">Entrar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
-  </header>
+</header>
 
   <!-- Sección Nosotros -->
-  <main class="container mt-5">
+  <main class="container mt-5 ">
     <section id="nosotros" class="bg-light rounded shadow-sm mb-5">
       <h2 class="text-center pt-4">Nosotros</h2>
       <p class="lead text-center px-3 pb-4">
