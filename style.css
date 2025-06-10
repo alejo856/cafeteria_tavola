@@ -169,12 +169,3 @@ max-width: 100%; /* Img ocupa todo el ancho */
 height: 200px; /* Fija la altura para mantener consistencia */
 object-fit: cover; /* Hace que la imagen no se distorsione */
 }
-
-/**/
-
-/* Responsive fixes */
-@media (max-width: 575px) {
-  .navbar-nav .dropdown-menu {
-    min-width: 100% !important;
-  }
-}
